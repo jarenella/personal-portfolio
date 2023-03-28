@@ -1,0 +1,427 @@
+/* reseting browser default css changes */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+/* scrollbar width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* scrollbar track */
+::-webkit-scrollbar-track {
+    background:rgb(39 39 42)
+}
+
+/* scrollbar handle */
+::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 10px;
+}
+
+/* scrollbar handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(54, 54, 54);
+}
+
+.body {
+    color:rgb(54, 54, 54);
+}
+
+#navbar-icon {
+    width: 50px;
+    height: 50px;
+    display: inline;
+    /*filter: invert(1);*/
+}
+
+#navbar-icon:hover {
+    cursor:pointer;
+}
+
+.navbar-buttons {
+    display: inline;
+}
+
+/* #settings-button {
+    filter: invert(1);
+    float: right;
+    margin-top: 50px;
+    margin-right: 20px;
+} */
+
+#settings-button:hover {
+    cursor: pointer;
+}
+
+.hero-card {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border: 3px solid #f1f1f1;
+    margin: auto;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    border-radius: 20px;
+}
+
+#my-pic {
+    height: auto;
+    width: 200px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 80px;
+}
+
+.blurb-holder {
+    display: inline-block;
+    margin-left: 80px;
+}
+
+.area-title {
+    text-align: center;
+    color: white;
+    font-size: 150px;
+    font-family: 'Oleo Script', cursive;
+    height: 20%;
+    text-decoration: underline;
+}
+
+.main {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../media/imgs/blurred.jpg');
+}
+
+.lower-card {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border: 3px solid #f1f1f1;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 85px;
+    border-radius: 20px;
+}
+
+.card-pic {
+    object-fit: cover;
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.small-blurb-holder {
+    text-align: center;
+    margin-left: 0px;
+    width: 300px;
+}
+
+.big-card-header {
+    font-family: 'Oleo Script', cursive;
+    font-size: 50px;
+}
+
+.hero-card:hover, .lower-card:hover, .contact-card:hover {
+    box-shadow:
+    0 0 60px 30px #fff,  /* inner white */
+    0 0 100px 60px #f0f, /* middle magenta */
+    0 0 140px 90px #0ff; /* outer cyan */
+}
+
+.navbar-header {
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    top: 0px;
+}
+
+#bumper {
+    height:80px;
+}
+
+.modal-background {
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    opacity: 0.4;
+    z-index: 4;
+}
+
+.modal {
+    position: fixed;
+    position: fixed;
+    width: 60%;
+    height: 60%;
+    top: 25%;
+    left:20%;
+    z-index: 4;
+
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border: 3px solid #f1f1f1;
+    border-radius: 20px;
+}
+
+.modal-left {
+    text-align: left;
+}
+
+.modal-button {
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    padding-right: 7px;
+    padding-left: 6px;
+}
+
+.modal-title {
+    color: white;
+    font-family: 'Oleo Script', cursive;
+    font-size: 50px;
+    text-align: center;
+}
+
+.modal-desc {
+    color:white;
+}
+
+.hidden {
+    display: none;
+}
+
+.modal-img {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.modal-div {
+    width: 350px;
+    margin: 10px;
+}
+
+.modal-button:hover {
+    box-shadow:
+    0 0 6px 3px #fff,  /* inner white */
+    0 0 10px 6px #f0f, /* middle magenta */
+    0 0 14px 9px #0ff; /* outer cyan */
+}
+
+.modal-content {
+    margin: 0;
+    /* position: absolute; */
+    top: 50%;
+    -ms-transform: translateY(0%);
+    transform: translateY(25%);
+}
+
+.card-title {
+    font-size: 20px;
+}
+
+.repo-link {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+.deploy-link {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+.contact-card {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border: 3px solid #f1f1f1;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 200px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    border-radius: 20px;
+}
+
+.contact-holder {
+    display: inline-block;
+}
+
+#email {
+    border-radius: 10px;
+    color: black;
+    background-color: lightgrey;
+}
+
+#message {
+    border-radius: 10px;
+    color: black;
+    background-color: lightgrey;
+    width: 90%;
+}
+
+#email:focus, #message:focus {
+    box-shadow:
+    0 0 6px 3px #fff,  /* inner white */
+    0 0 10px 5px #f0f, /* middle magenta */
+    0 0 14px 7px #0ff; /* outer cyan */
+    outline-width: 0;
+}
+
+#form-button {
+    background-color: lightgrey;
+    border-radius: 5px;
+    color: #555;
+    padding: 5px;
+}
+
+#form-button:hover {
+    cursor: pointer;
+    box-shadow:
+    0 0 6px 3px #fff,  /* inner white */
+    0 0 10px 5px #f0f, /* middle magenta */
+    0 0 14px 7px #0ff; /* outer cyan */
+    outline-width: 0;
+}
+
+.footer-button {
+    width: 70px;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+.form-message{
+    background:grey;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    width: 25%;
+    position: fixed;
+    top: 10%;
+    z-index: 5;
+    /* background: rgb(0,100,0);
+    background: linear-gradient(156deg, rgba(0,100,0,1) 0%, rgba(33,161,33,1) 100%); */
+}
+
+#popup-close-btn {
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+}
+
+#popup-close-btn:hover {
+    cursor: pointer;
+    background: black;
+    opacity: .2;
+}
+
+@media only screen and (max-width: 780px) {
+    .hero-card {
+        text-align: center;
+        margin: 10px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    #my-pic {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .blurb-holder {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .area-title {
+        font-size: 50px;
+    }
+
+    .modal {
+        position: fixed;
+        position: fixed;
+        width: 60%;
+        height: 80%;
+        top: 10%;
+        left:20%;
+    }
+
+    .modal-content {
+        margin: 0;
+        /* position: absolute; */
+        top: 25%;
+        -ms-transform: translateY(0%);
+        transform: translateY(0%);
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .modal {
+        position: fixed;
+        position: fixed;
+        width: 85%; /*is normally 60*/
+        height: 80%;
+        top: 10%;
+        left:7.5%;
+    }
+    .modal-desc {
+        font-size: 11px;
+    }
+}
+
+@media only screen and (max-height: 720px) {
+    .modal {
+        position: fixed;
+        position: fixed;
+        height: 90%; /*is normally 80*/
+        top: 5%;
+        left:7.5%;
+    }
+    .modal-desc {
+        font-size: 11px;
+    }
+}
+
+@media only screen and (max-height: 1180px) and (min-width: 414px) and (max-width: 600px) {
+    .modal {
+        height: 81%; /*is normally 80*/
+        top: 10%;
+        
+    }
+}
+
+/*look into surface duo, galaxy fold, and nesthub more*/
