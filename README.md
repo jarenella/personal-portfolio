@@ -12,4 +12,4 @@ This is my personal portfolio, a front-end application deployed through GitHub P
 
 # Contribution guidelines
 
-As a personal portfolio, this project unfortunately isn't open to any contribution, but if you have any questions, please feel free to contact me!
+As a personal portfolio, this project unfortunately isn't open to any contribution, but if you have any questions, please feel free to contact me! 
